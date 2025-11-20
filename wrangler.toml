@@ -1,0 +1,27 @@
+name = "cf-ai-assistant"
+main = "src/index.ts"
+compatibility_date = "2024-11-20"
+
+# Serve static assets from public directory
+[site]
+bucket = "./public"
+
+# Enable Workers AI
+[ai]
+binding = "AI"
+
+# Configure Durable Objects for state management
+[[durable_objects.bindings]]
+name = "CHAT_SESSIONS"
+class_name = "ChatSession"
+
+# Durable Object migrations
+[[migrations]]
+tag = "v1"
+new_classes = ["ChatSession"]
+
+# Workflow binding for orchestration
+[[workflows]]
+binding = "CHAT_WORKFLOW"
+name = "chat-workflow"
+class_name = "ChatWorkflow"

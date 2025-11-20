@@ -1,0 +1,31 @@
+{
+  "name": "cf_ai_intelligent-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered chat assistant using Cloudflare Workers AI, Durable Objects, and Workflows",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "pages:dev": "wrangler pages dev public --compatibility-date=2024-11-20",
+    "pages:deploy": "wrangler pages deploy public",
+    "dev:local": "wrangler dev --local"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "ai",
+    "llama",
+    "durable-objects",
+    "workflows"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.84.1"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.4.0"
+  }
+}
