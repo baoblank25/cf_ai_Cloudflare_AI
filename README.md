@@ -2,32 +2,32 @@
 
 A fully-featured AI-powered chat assistant built on Cloudflare's edge computing platform. This application demonstrates the integration of Cloudflare Workers AI, Durable Objects, Workflows, and Pages to create a responsive, stateful conversational AI experience.
 
-## 🌟 Features
+## Features
 
 ### Core Components
 
-1. **🧠 LLM Integration**
+1. **LLM Integration**
    - Uses **Llama 3.3 70B Instruct FP8** model via Cloudflare Workers AI
    - Fast, high-quality responses powered by edge computing
    - Context-aware conversations with conversation history
 
-2. **⚙️ Workflow Orchestration**
+2. **Workflow Orchestration**
    - Cloudflare Workflows for multi-step AI interactions
    - Coordinated task processing with step-by-step execution
    - Reliable state management across workflow steps
 
-3. **💾 State Management**
+3. **State Management**
    - Durable Objects for persistent conversation history
    - Session-based memory with unique session IDs
    - Reliable storage with automatic persistence
 
-4. **💬 User Interface**
+4. **User Interface**
    - Interactive chat interface deployed on Cloudflare Pages
    - Real-time message updates
    - Clean, responsive design that works on all devices
    - Typing indicators and status updates
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -69,16 +69,16 @@ A fully-featured AI-powered chat assistant built on Cloudflare's edge computing 
 └──────────────────────────┘
 ```
 
-## 📋 Requirements Met
+## Requirements Met
 
-✅ **LLM**: Llama 3.3 70B Instruct model via Workers AI  
-✅ **Workflow/Coordination**: Cloudflare Workflows for orchestration  
-✅ **User Input**: Interactive chat interface via Cloudflare Pages  
-✅ **Memory/State**: Durable Objects for persistent conversation history  
-✅ **Documentation**: Comprehensive README with setup instructions  
-✅ **AI Prompts**: All prompts documented in PROMPTS.md  
+**LLM**: Llama 3.3 70B Instruct model via Workers AI  
+**Workflow/Coordination**: Cloudflare Workflows for orchestration  
+**User Input**: Interactive chat interface via Cloudflare Pages  
+**Memory/State**: Durable Objects for persistent conversation history  
+**Documentation**: Comprehensive README with setup instructions  
+**AI Prompts**: All prompts documented in PROMPTS.md  
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -150,7 +150,7 @@ A fully-featured AI-powered chat assistant built on Cloudflare's edge computing 
    
    After deploying the Worker, update the `API_BASE_URL` in `public/app.js` to point to your deployed Worker URL.
 
-## 📖 API Endpoints
+## API Endpoints
 
 ### POST /api/chat
 Send a message and get an AI response (direct path).
@@ -231,7 +231,7 @@ Clear conversation history for a session.
 }
 ```
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Basic Chat
 1. Open the application in your browser
@@ -251,7 +251,7 @@ Clear conversation history for a session.
 - "What are the benefits of edge computing?"
 - "Help me debug this JavaScript code: [paste code]"
 
-## 🧪 Testing
+## Testing
 
 ### Test the Worker API
 ```bash
@@ -267,7 +267,7 @@ curl -X POST http://localhost:8787/api/chat \
 curl "http://localhost:8787/api/history?sessionId=test_123"
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cloudflare/
@@ -288,7 +288,7 @@ cloudflare/
 └── PROMPTS.md                      # AI prompts used
 ```
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - **Cloudflare Workers**: Serverless compute at the edge
 - **Workers AI**: Access to Llama 3.3 and other models
@@ -298,7 +298,7 @@ cloudflare/
 - **TypeScript**: Type-safe development
 - **HTML/CSS/JavaScript**: Modern web frontend
 
-## 🌐 Links
+## Links
 
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 - [Workers AI Documentation](https://developers.cloudflare.com/workers-ai/)
@@ -306,7 +306,7 @@ cloudflare/
 - [Cloudflare Workflows Documentation](https://developers.cloudflare.com/workflows/)
 - [Llama 3.3 Model Info](https://ai.meta.com/llama/)
 
-## 🎓 Learning Resources
+## Learning Resources
 
 This project demonstrates:
 - Serverless architecture patterns
